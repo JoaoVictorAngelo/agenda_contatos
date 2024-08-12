@@ -10,8 +10,8 @@ form.addEventListener('submit', function(e){
 })
 
 function adicionarContato(){
-    const nomeContato = document.getElementById('nome-contato').value
-    const numeroContato = document.getElementById('numero-contato').value
+    let nomeContato = document.getElementById('nome-contato').value
+    let numeroContato = document.getElementById('numero-contato').value
 
     if(contatos.includes(numeroContato)){
         alert(`O numero:${numeroContato} ja foi adicionado a lista de contatos`)
