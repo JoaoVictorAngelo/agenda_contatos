@@ -2,9 +2,7 @@
 body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh;
-    margin: 0;
+    margin: 50px;
     background-color: #f5f5f5;
 }
 
@@ -15,24 +13,30 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px; /* Largura máxima do contêiner */
     width: 100%; /* Faz o contêiner usar toda a largura disponível dentro do limite */
+    max-height: 80vh;
     display: flex;
     flex-direction: column; /* Organiza o conteúdo em coluna */
 }
 
-
-form {
+.formulario-container {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.tabela-container {
+    margin-top: 24px; /* Aumenta a margem superior */
+    padding: 20px; /* Adiciona preenchimento interno */
+    border-radius: 8px; /* Aplica cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra semelhante ao formulário */
+    overflow-y: auto; /* Permite rolagem vertical */
+    flex-grow: 1; /* Permite que a tabela cresça e ocupe o espaço disponível */
+}
 
 table {
     width: 100%; /* Faz a tabela usar toda a largura disponível */
     border-collapse: collapse; /* Remove o espaçamento entre as células */
-    margin-top: 16px;
-    overflow-y: auto; /* Permite rolagem vertical */
 }
 
 th, td {
